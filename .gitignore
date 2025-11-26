@@ -7,3 +7,6 @@ output/*
 !output/.gitkeep
 data/*
 !data/.gitkeep
+.streamlit/secrets.toml
+*.log
+.DS_Store
