@@ -115,8 +115,8 @@ class SmartValidator:
             )
             
         except Exception as e:
-            # If AI analysis fails, return empty validation (don't block the process)
-            print(f"⚠️  AI validation failed: {e}")
+            # If AI analysis fails, return empty validation
+            print(f"AI validation failed: {e}")
             return ValidationResult(is_valid=True, issues=[], warnings=[])
     
     def reset(self):

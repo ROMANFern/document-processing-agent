@@ -10,7 +10,7 @@ from datetime import datetime
 
 os.environ['PYARROW_IGNORE_TIMEZONE'] = '1'
 
-# Add src to path so we can import our modules
+# Add src to path to import the modules
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from extractor import InvoiceExtractor

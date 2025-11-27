@@ -47,7 +47,7 @@ Return the data in a clear, structured format.
             temperature=0  # Deterministic output
         )
         
-        print("✅ API Connection Successful!")
+        print("API Connection Successful!")
         print("\n" + "="*60)
         print("EXTRACTED DATA:")
         print("="*60)
@@ -57,7 +57,7 @@ Return the data in a clear, structured format.
         print(f"Estimated cost: ${response.usage.total_tokens * 0.00015:.4f}")
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         print("\nMake sure your .env file has: OPENAI_API_KEY=your-key-here")
 
 if __name__ == "__main__":

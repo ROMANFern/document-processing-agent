@@ -74,7 +74,7 @@ class InvoiceValidator:
             if abs(expected_amount - item.amount) > 0.01:
                 issues.append(
                     f"Line item math error: '{item.description}' "
-                    f"- {item.quantity} × ${item.unit_price:.2f} "
+                    f"- {item.quantity} x ${item.unit_price:.2f} "
                     f"= ${expected_amount:.2f}, but shows ${item.amount:.2f}"
                 )
         
